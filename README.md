@@ -8,7 +8,7 @@ A fully responsive, fluid layout for the information center page, built from a F
 ## 📸 Preview  
 | Desktop (1728px+) | Mobile (375px) |
 |-------------------|----------------|
-| ![Desktop version](images/preview.jpg) | ![Mobile version](images/preview-mobile.jpg) |
+| ![Desktop version](images/preview.png) | ![Mobile version](images/preview-mobile.png) |
 
 ## 🛠️ Technologies Used  
 - **HTML5** (semantic markup, accessibility)  
