@@ -33,13 +33,18 @@ A fully responsive, fluid layout for the information center page, built from a F
 Responsive-fluid-layout-for-the-Sminex-Inteko-website/
 ├── index.html
 ├── css/
-│ └── style.css # Компилированный CSS
-├── scss/ # Исходные SCSS файлы
-├── fonts/ # Веб-шрифты
-├── images/ # Все изображения
-│ ├── preview.png # Desktop screenshot
-│ ├── preview-mobile.png # Mobile screenshot
-│ └── news/ # News article images
+│ └── style.css
+├── scss/
+│ ├── blocks/
+│ ├── global/
+│ ├── style.scss
+├── fonts/
+├── images/
+│ ├── sprite/
+│ ├── sprite.svg
+│ ├── preview.png
+│ ├── preview-mobile.png
+│ └── news/
 └── README.md
 
 ## 📬 Contact  
