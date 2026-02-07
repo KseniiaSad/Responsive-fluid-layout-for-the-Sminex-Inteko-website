@@ -30,14 +30,16 @@ A fully responsive, fluid layout for the information center page, built from a F
 - **Mobile:** up to 767px  
 
 ## 📁 Project Structure  
+Responsive-fluid-layout-for-the-Sminex-Inteko-website/
 ├── index.html
 ├── css/
-│ └── style.css
-├── images/
-│ ├── sprite.svg
-│ ├── preview.jpg
-│ ├── preview-mobile.jpg
-│ └── news/ (all optimized images)
+│ └── style.css # Компилированный CSS
+├── scss/ # Исходные SCSS файлы
+├── fonts/ # Веб-шрифты
+├── images/ # Все изображения
+│ ├── preview.png # Desktop screenshot
+│ ├── preview-mobile.png # Mobile screenshot
+│ └── news/ # News article images
 └── README.md
 
 ## 📬 Contact  
