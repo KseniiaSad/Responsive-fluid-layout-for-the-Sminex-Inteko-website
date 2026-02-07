@@ -1,0 +1,21 @@
+.social {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: calc(80px + 116px);
+    right: 38px;
+
+    @include vp-1023 {
+        gap: 44px;
+        top: calc(40px + 116px);
+        right: 9px;
+    }
+
+    &__icon {
+        color: $color-white-50;
+    }
+}

@@ -1,0 +1,127 @@
+.burger-menu {
+    background-color: $color-blue-charcoa;
+    gap: 90px;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    align-items: start;
+    padding: 180px 0 0 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    left: 0;
+    overflow-y: auto;
+    display: none;
+
+    @media (max-width: 1439px) {
+        grid-template-columns: repeat(3, 300px);
+    }
+
+    @media (max-width: 1268px) {
+        grid-template-columns: repeat(3, 270px);
+        gap: 60px;
+    }
+
+    @include vp-1023 {
+        grid-template-columns: repeat(2, 280px);
+        grid-template-rows: max-content;
+        gap: 80px 60px;
+        padding: 84px 0 0 0;
+        top: 57px;
+    }
+
+    @include vp-767 {
+        gap: 40px;
+        padding: 42px 20px;
+        justify-content: flex-start;
+        height: calc(100vh - 40px);
+        top: 57px;
+    }
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media (max-width: 1439px) {
+            gap: 30px;
+        }
+
+        @include vp-1023 {
+            gap: 35px;
+            height: fit-content;
+            align-items: start;
+        }
+
+        @include vp-767 {
+            gap: 20px;
+        }
+    }
+
+    &__list--small {
+        @include vp-1023 {
+            order: 3;
+        }
+
+        @include vp-767 {
+            order: 0;
+        }
+    }
+
+    &__link {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: $color-white-50;
+
+        @media (max-width: 1268px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        @media (max-width: 1109px) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        @include vp-1023 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        @include vp-767 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__link--small {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0;
+
+        @include vp-1023 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__link--mobile {
+        display: none;
+
+        @include vp-767 {
+            display: block;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+}

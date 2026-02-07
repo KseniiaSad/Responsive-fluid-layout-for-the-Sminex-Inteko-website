@@ -1,0 +1,46 @@
+.main-nav {
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        @media (max-width: 1176px) {
+            gap: 5px;
+        }
+
+        @include vp-767 {
+            display: none;
+        }
+    }
+
+    &__btn {
+        white-space: nowrap;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-blue-charcoa;
+
+        @media (max-width: 1397px) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        @media (max-width: 1176px) {
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+
+    &__btn--mobile {
+        display: none;
+
+        @include vp-767 {
+            display: block;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

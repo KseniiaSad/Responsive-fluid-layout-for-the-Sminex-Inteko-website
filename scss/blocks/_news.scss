@@ -1,0 +1,102 @@
+.news {
+    margin: 0 0 60px 0;
+    position: relative;
+
+    &__choice {
+        padding: 40px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border-bottom: 1px solid $color-iron;
+
+        @media (max-width: 1176px) {
+            padding: 25px 0 20px 0;
+            gap: 20px;
+        }
+
+        @include vp-1023 {
+            padding: 20px 0 15px 0;
+        }
+
+        @media (max-width: 979px) {
+            padding: 15px 0 10px 0;
+        }
+
+
+        @include vp-767 {
+            padding: 0 0 12px 0;
+            margin: 17px 0 0 0;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__switch {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+        position: relative;
+
+        @include vp-767 {
+            gap: 20px;
+        }
+    }
+
+    &__toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        font-family: $ff-imb-plex;
+        cursor: pointer;
+    }
+
+    &__icon {
+        color: $color-mischka;
+
+        @include vp-767 {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__toggle--current &__icon {
+        color: $color-blue-charcoa;
+    }
+
+    &__toggle-text {
+        font-size: 18px;
+        line-height: 26px;
+        color: #A7A8AA;
+        font-weight: 300;
+
+        @media (max-width: 1397px) {
+            font-size: 16px;
+            line-height: 14px;
+        }
+
+        @media (max-width: 1176px) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        @include vp-767 {
+            display: none;
+        }
+    }
+
+    &__toggle:hover &__toggle-text {
+        text-decoration: underline;
+    }
+
+    &__toggle:focus-visible &__toggle-text {
+        text-decoration: underline;
+    }
+
+    &__toggle--current &__toggle-text {
+        color: #1D252D;
+    }
+}

@@ -1,0 +1,20 @@
+.btn {
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 60px;
+    background-color: $color-ecru-white;
+    cursor: pointer;
+
+    &--active {
+        color: $color-white;
+        background-color: $color-blue-charcoa;
+    }
+
+    &:hover {
+        background-color: $color-chrome-white;
+    }
+
+    &:focus-visible {
+        background-color: $color-chrome-white;
+    }
+}
